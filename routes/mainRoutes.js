@@ -5,6 +5,7 @@ const router = express.Router();
 
 // Define routes
 router.get('/', getIndex);
-router.get('/about', getAbout);
+router.get('/:name', getIndex);
+router.get('/about?title', getAbout);
 
 export default router;
